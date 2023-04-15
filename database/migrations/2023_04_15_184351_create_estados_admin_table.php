@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('estados_admin', function (Blueprint $table) {
             $table->unsignedBigInteger('id')->primary();
-            $table->string('nombreEstadoAdmin');
+            $table->string('nombreEstadosAdmin');
             $table->timestamps();
         });
     }
