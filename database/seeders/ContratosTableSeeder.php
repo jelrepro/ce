@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Contrato;
 
-class ContratoTableSeeder extends Seeder
+class ContratosTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

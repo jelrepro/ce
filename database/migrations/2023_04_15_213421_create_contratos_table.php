@@ -30,7 +30,7 @@ return new class extends Migration
             $table->foreign('estado_id')->references('id')->on('estados');
             $table->string('objecto');
             $table->string('alcance');
-            $table->decimal('costoContarto');
+            $table->decimal('costoContrato');
             $table->integer('proyeccion');
             $table->string('anticipo');
             $table->string('amortizacion');
