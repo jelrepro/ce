@@ -12,6 +12,11 @@ class GrupoProyectosTableSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        DB::table('grupo_proyectos')->insert([
+            ['id' => 0, 'nombreGrupoProyecto' => 'PLANIFICADO'],
+            ['id' => 1, 'nombreGrupoProyecto' => 'PLANIFICADO 2'],
+            ['id' => 2, 'nombreGrupoProyecto' => 'PLANIFICADO 3'],
+            
+        ]);
     }
 }
