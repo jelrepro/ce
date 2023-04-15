@@ -12,21 +12,26 @@ class Proyecto extends Model
     // protected $fillable = ['proyectos','costo_proyecto','cliente','supervisor','telefono','categorie_id','user_id', ];
 
     protected $fillable = [
-        'convenios',
+        'proyectos',
         'municipio_id',
-        'costo_convenio',
+        'costo_proyecto',
         'estado_id',
         'cliente',
         'supervisor',
         'telefono',
+        'correo',
         'descripcion',
-        'etapas_adm',
-        'objetivo',
+        'estado_gestion_id',
+        'objeto',
         'alcance',
+        'estado_admin_id',
         'anio',
         'responsable',
         'centro_costos',
         'orden_interna',
+        'cod_innva',
+        'tipo_proyecto_id',
+        'grupo_proyecto_id',
     ];
 
     public function user()

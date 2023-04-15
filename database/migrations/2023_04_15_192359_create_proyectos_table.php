@@ -33,9 +33,11 @@ return new class extends Migration
             $table->string('centro_costos');
             $table->decimal('orden_interna');
             $table->decimal('cod_inva');
-            $table->date('fechaFin');
-
-            $table->string('etapas_adm');
+            $table->unsignedBigInteger('grupo_proyecto_id');
+            $table->foreign('grupo_proyecto_id')->references('id')->on('grupo_proyectos');
+            $table->unsignedBigInteger('tipo_proyecto_id');
+            $table->foreign('tipo_proyecto_id')->references('id')->on('tipo_proyectos');
+            
             
             $table->timestamps();
         });
