@@ -9,6 +9,7 @@ php artisan db:seed --class=EstadosAdminTableSeeder
 php artisan db:seed --class=GrupoProyectosTableSeeder
 php artisan db:seed --class=TipoProyectosTableSeeder
 php artisan db:seed --class=ProyectosTableSeeder
+php artisan db:seed --class=ContratosTableSeeder
 # php artisan db:seed --class=ConveniosTableSeeder
 # php artisan db:seed --class=ProyectosTableSeeder
 
