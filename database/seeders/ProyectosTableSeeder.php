@@ -4,47 +4,85 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use App\Models\Proyecto;
-use Faker\Factory as Faker;
-
 
 class ProyectosTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
-    // public function run(): void
-    // {
-       
-    // }
-    public function run()
+    public function run(): void
     {
-        // Crear una instancia de Faker para generar datos aleatorios
-        $faker = Faker::create();
+        $proyectos = [
+            [
+                'proyectos' => 'Convenio B',
+                'municipio_id' => 2,
+                'costoProyecto' => 100000.00,
+                'estado_id' => 1,
+                'cliente' => 'Cliente A',
+                'supervisor' => 'Supervisor A',
+                'telefono' => '1234567890',
+                'correo' => 'prueba2@gmial.com',
+                'descripcion' => 'Descripción del Convenio A',
+                'estado_gestion_id' => 1,
+                'objeto' => 'Objetivo del Convenio A',
+                'alcance' => 'Alcance del Convenio A',
+                'anio' => '2022',
+                'responsable' => 'Responsable del Convenio A',
+                'centro_costos' => 'Centro de Costos del Convenio A',
+                'orden_interna' => 'Orden Interna del Convenio A',
+                'cod_inva' => '1212',
+                'grupo_proyecto_id' => 1,
+                'tipo_proyecto_id' => 1,
+            ],
+            [
+                'proyectos' => 'Convenio C',
+                'municipio_id' => 1,
+                'costoProyecto' => 100000.00,
+                'estado_id' => 3,
+                'cliente' => 'Cliente A',
+                'supervisor' => 'Supervisor A',
+                'telefono' => '1234567890',
+                'correo' => 'prueba@gmial.com',
+                'descripcion' => 'Descripción del Convenio A',
+                'estado_gestion_id' => 1,
+                'objeto' => 'Objetivo del Convenio A',
+                'alcance' => 'Alcance del Convenio A',
+                'anio' => '2022',
+                'responsable' => 'Responsable del Convenio A',
+                'centro_costos' => 'Centro de Costos del Convenio A',
+                'orden_interna' => 'Orden Interna del Convenio A',
+                'cod_inva' => '1212',
+                'grupo_proyecto_id' => 1,
+                'tipo_proyecto_id' => 1,
+            ],
+            [
+                'proyectos' => 'Convenio A',
+                'municipio_id' => 1,
+                'costoProyecto' => 100000.00,
+                'estado_id' => 1,
+                'cliente' => 'Cliente A',
+                'supervisor' => 'Supervisor A',
+                'telefono' => '1234567890',
+                'correo' => 'prueba3@gmial.com',
+                'descripcion' => 'Descripción del Convenio A',
+                'estado_gestion_id' => 1,
+                'objeto' => 'Objetivo del Convenio A',
+                'alcance' => 'Alcance del Convenio A',
+                'anio' => '2022',
+                'responsable' => 'Responsable del Convenio A',
+                'centro_costos' => 'Centro de Costos del Convenio A',
+                'orden_interna' => 'Orden Interna del Convenio A',
+                'cod_inva' => '1212',
+                'grupo_proyecto_id' => 1,
+                'tipo_proyecto_id' => 1,
+            ],
+            // Agregue más datos si lo desea
+        ];
 
-        // Crear registros de ejemplo en la tabla proyectos
-        for ($i = 1; $i <= 10; $i++) {
-            Proyecto::create([
-                'proyectos' => 'Proyecto ' . $i,
-                'municipio_id' => $faker->numberBetween(1, 10),
-                'costoProyecto' => $faker->randomFloat(2, 1000, 10000),
-                'estado_id' => $faker->numberBetween(0, 4),
-                'cliente' => $faker->name,
-                'supervisor' => $faker->name,
-                'telefono' => $faker->phoneNumber,
-                'correo' => $faker->email,
-                'descripcion' => $faker->text,
-                'estado_gestion_id' => $faker->numberBetween(0, 3),
-                'objeto' => $faker->text,
-                'alcance' => $faker->text,
-                'anio' => $faker->year,
-                'responsable' => $faker->name,
-                'centro_costos' => $faker->word,
-                'orden_interna' => $faker->randomFloat(2, 1, 100),
-                'cod_inva' => $faker->randomFloat(2, 1, 100),
-                'grupo_proyecto_id' => $faker->numberBetween(0, 3),
-                'tipo_proyecto_id' => $faker->numberBetween(0, 3),
-            ]);
+        foreach ($proyectos as $proyecto) {
+            Proyecto::create($proyecto);
         }
     }
 }

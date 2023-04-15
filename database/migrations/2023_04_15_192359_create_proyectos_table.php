@@ -31,8 +31,8 @@ return new class extends Migration
             $table->string('anio');
             $table->string('responsable');
             $table->string('centro_costos');
-            $table->decimal('orden_interna');
-            $table->decimal('cod_inva');
+            $table->string('orden_interna');
+            $table->integer('cod_inva');
             $table->unsignedBigInteger('grupo_proyecto_id');
             $table->foreign('grupo_proyecto_id')->references('id')->on('grupo_proyectos');
             $table->unsignedBigInteger('tipo_proyecto_id');
