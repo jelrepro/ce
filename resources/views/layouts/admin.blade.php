@@ -32,6 +32,12 @@
                     'active' => request()->routeIs('admindashboard'),
                     'icon' => 'fa-solid fa-gauge-high',
                 ],
+                [
+                    'title' => 'Proyectos',
+                    'url' => route('adminproyectos.index'),
+                    'active' => request()->routeIs('adminproyectos.index'),
+                    'icon' => 'fa-solid fa-gauge-high',
+                ],
                 
 
             ];
