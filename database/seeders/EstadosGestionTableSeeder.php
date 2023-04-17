@@ -13,7 +13,7 @@ class EstadosGestionTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('estados_gestion')->insert([
+        DB::table('estado_gestions')->insert([
             ['id' => 0, 'nombreEstadoGestion' => 'PLANIFICADO'],
             ['id' => 1, 'nombreEstadoGestion' => 'DISEÑO Y DESARROLLO'],
             ['id' => 2, 'nombreEstadoGestion' => 'CONSTRRUCCION'],

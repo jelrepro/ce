@@ -46,7 +46,8 @@ class Proyecto extends Model
 
     public function estadoGestion()
     {
-        return $this->belongsTo(EstadoGestion::class);
+        // return $this->belongsTo(EstadoGestion::class);
+        return $this->belongsTo(EstadoGestion::class, 'estado_gestion_id');
     }
 
     public function estadoAdmin()

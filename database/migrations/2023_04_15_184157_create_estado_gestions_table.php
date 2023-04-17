@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('estados_gestion', function (Blueprint $table) {
+        Schema::create('estado_gestions', function (Blueprint $table) {
             $table->unsignedBigInteger('id')->primary();
             $table->string('nombreEstadoGestion');
             $table->timestamps();

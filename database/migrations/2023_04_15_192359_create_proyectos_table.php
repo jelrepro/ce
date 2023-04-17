@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('correo');
             $table->text('descripcion');
             $table->unsignedBigInteger('estado_gestion_id');
-            $table->foreign('estado_gestion_id')->references('id')->on('estados_gestion');
+            $table->foreign('estado_gestion_id')->references('id')->on('estado_gestions');
             $table->text('objeto');
             $table->text('alcance');
             $table->string('anio');
