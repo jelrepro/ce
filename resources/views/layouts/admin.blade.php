@@ -26,12 +26,7 @@
 
         @php
             $links = [
-                [
-                    'title' => 'Dashboard',
-                    'url' => route('admindashboard'),
-                    'active' => request()->routeIs('admindashboard'),
-                    'icon' => 'fa-solid fa-gauge-high',
-                ],
+                
                 [
                     'title' => 'Proyectos',
                     'url' => route('adminproyectos.index'),
@@ -45,7 +40,7 @@
         @endphp
 
         <div class="flex" x-data="{
-            open: false,
+            open: true,
             openSidebar: true
         }">
 

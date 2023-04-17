@@ -16,7 +16,7 @@ class ProyectosTableSeeder extends Seeder
     {
         $proyectos = [
             [
-                'proyectos' => 'Proyecto A',
+                'proyectos' => 'RPT TRAFO ARGELIA',
                 'municipio_id' => 2,
                 'costoProyecto' => 100000.00,
                 'estado_id' => 0,
@@ -37,7 +37,7 @@ class ProyectosTableSeeder extends Seeder
                 'tipo_proyecto_id' => 1,
             ],
             [
-                'proyectos' => 'Proyecto B',
+                'proyectos' => 'RPT ZONA SUR 1',
                 'municipio_id' => 1,
                 'costoProyecto' => 100000.00,
                 'estado_id' => 0,
@@ -58,7 +58,7 @@ class ProyectosTableSeeder extends Seeder
                 'tipo_proyecto_id' => 1,
             ],
             [
-                'proyectos' => 'Proyecto C',
+                'proyectos' => 'RPT ZONA SUR 2',
                 'municipio_id' => 1,
                 'costoProyecto' => 100000.00,
                 'estado_id' => 3,
@@ -79,7 +79,7 @@ class ProyectosTableSeeder extends Seeder
                 'tipo_proyecto_id' => 1,
             ],
             [
-                'proyectos' => 'Convenio A',
+                'proyectos' => 'GGC-504-2022',
                 'municipio_id' => 1,
                 'costoProyecto' => 100000.00,
                 'estado_id' => 1,
@@ -92,7 +92,7 @@ class ProyectosTableSeeder extends Seeder
                 'objeto' => 'Objetivo del Convenio A',
                 'alcance' => 'Alcance del Convenio A',
                 'anio' => '2022',
-                'responsable' => 'Responsable del Convenio A',
+                'responsable' => 'Responsable',
                 'centro_costos' => 'Centro de Costos del Convenio A',
                 'orden_interna' => 'Orden Interna del Convenio A',
                 'cod_inva' => '1212',
@@ -100,7 +100,7 @@ class ProyectosTableSeeder extends Seeder
                 'tipo_proyecto_id' => 1,
             ],
             [
-                'proyectos' => 'Convenio A',
+                'proyectos' => 'GGC-504-2020',
                 'municipio_id' => 1,
                 'costoProyecto' => 100000.00,
                 'estado_id' => 1,
@@ -113,7 +113,7 @@ class ProyectosTableSeeder extends Seeder
                 'objeto' => 'Objetivo del Convenio A',
                 'alcance' => 'Alcance del Convenio A',
                 'anio' => '2022',
-                'responsable' => 'Responsable del Convenio A',
+                'responsable' => 'Responsable',
                 'centro_costos' => 'Centro de Costos del Convenio A',
                 'orden_interna' => 'Orden Interna del Convenio A',
                 'cod_inva' => '1212',
@@ -121,7 +121,7 @@ class ProyectosTableSeeder extends Seeder
                 'tipo_proyecto_id' => 1,
             ],
             [
-                'proyectos' => 'Convenio A',
+                'proyectos' => 'GGC-554-2020',
                 'municipio_id' => 1,
                 'costoProyecto' => 100000.00,
                 'estado_id' => 1,
@@ -134,7 +134,7 @@ class ProyectosTableSeeder extends Seeder
                 'objeto' => 'Objetivo del Convenio A',
                 'alcance' => 'Alcance del Convenio A',
                 'anio' => '2022',
-                'responsable' => 'Responsable del Convenio A',
+                'responsable' => 'Responsable',
                 'centro_costos' => 'Centro de Costos del Convenio A',
                 'orden_interna' => 'Orden Interna del Convenio A',
                 'cod_inva' => '1212',
